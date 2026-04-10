@@ -1,0 +1,103 @@
+📘 LIBRARIES USED IN KNOWLEDGE AUTOMATION SYSTEM
+
+🔥 1. FastAPI
+
+Purpose: API Backend
+
+👉 FastAPI is used to create REST APIs for your system.
+It handles requests like uploading files, asking questions, and generating emails or call scripts.
+
+✅ Why used:
+
+Very fast performance
+Automatic API docs (Swagger)
+Easy to build scalable backend
+🔥 2. llama-index
+
+Purpose: RAG System (Retrieval + Generation)
+
+👉 It helps convert documents into searchable data and retrieve relevant information when a user asks a question.
+
+✅ Why used:
+
+Manages document indexing
+Provides query engine
+Supports filtering (like user_id)
+
+👉 It is the core brain of your knowledge system
+
+🔥 3. pgvector + PostgreSQL
+
+Purpose: Vector Database
+
+👉 PostgreSQL stores your data, and pgvector allows storing embeddings (vectors) for similarity search.
+
+✅ Why used:
+
+Persistent storage
+Fast similarity search
+Works well with AI systems
+
+👉 Used to find similar content for a query
+
+🔥 4. HuggingFace Embeddings
+
+Purpose: Convert Text → Vectors
+
+👉 This converts your document text into numerical vectors so the system can understand meaning.
+
+✅ Why used:
+
+Free and open-source
+Lightweight and fast
+Good semantic understanding
+
+👉 Without embeddings → no intelligent search
+
+🔥 5. Gemini LLM
+
+Purpose: Response Generation
+
+👉 Gemini is the AI model that generates final answers, emails, and call scripts using retrieved knowledge.
+
+✅ Why used:
+
+Good reasoning ability
+Fast responses
+Cost-efficient
+
+👉 It turns retrieved data into human-like output
+
+🔥 6. File Processing Libraries
+📄 pypdf
+
+👉 Used to read PDF files
+
+📄 python-docx
+
+👉 Used to read Word (.docx) files
+
+📊 pandas
+
+👉 Used to read Excel files and structured data
+
+✅ Why used:
+
+Supports multiple file formats
+Extracts text for processing
+🔥 7. Core Python Libraries
+⚙️ asyncpg
+
+👉 Async PostgreSQL driver
+
+Fast database operations
+⚙️ SQLAlchemy
+
+👉 ORM (Object Relational Mapper)
+
+Helps interact with database using Python
+⚙️ pydantic
+
+👉 Data validation library
+
+Ensures request/response data is correct

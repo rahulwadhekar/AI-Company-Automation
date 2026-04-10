@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Knowledge Automation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- AUTH SECTION -->
+  <div id="auth-section">
+    <h2>Knowledge Automation</h2>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <div class="buttons">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p id="auth-msg"></p>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="hidden">
+
+    <h2>Dashboard</h2>
+
+    <button onclick="logout()">Logout</button>
+
+    <hr>
+
+    <!-- Upload -->
+    <h3>Upload File</h3>
+    <input type="file" id="file">
+    <button onclick="uploadFile()">Upload</button>
+
+    <hr>
+
+    <!-- Query -->
+    <h3>Ask Query</h3>
+    <input type="text" id="query" placeholder="Ask something...">
+    <button onclick="askQuery()">Ask</button>
+
+    <hr>
+
+    <!-- Email -->
+    <h3>Generate Email</h3>
+    <input type="text" id="emailTask" placeholder="Enter task...">
+    <button onclick="generateEmail()">Generate</button>
+
+    <hr>
+
+    <!-- Call -->
+    <h3>Call Script</h3>
+    <input type="text" id="callTask" placeholder="Enter task...">
+    <button onclick="generateCall()">Generate</button>
+
+    <hr>
+
+    <!-- Agent -->
+    <h3>AI Agent</h3>
+    <input type="text" id="agentTask" placeholder="Enter task...">
+    <button onclick="runAgent()">Run</button>
+
+    <hr>
+
+    <h3>Response</h3>
+    <pre id="output"></pre>
+
+  </div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
